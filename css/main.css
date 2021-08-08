@@ -2,3 +2,57 @@ html, body {
   margin: 0;
   box-sizing: border-box;
 }
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+  padding: 12px;
+  width: 80%;
+  text-align: center;
+}
+
+.menu-items a {
+  padding-right: 12px;
+  text-decoration: none;
+  font-size: 1.4em;
+  color: black;
+}
+
+.main {
+  min-height: 100vh;
+  background: blue;
+}
+
+section {
+  text-align: center;
+  padding-top: 20px;
+}
+
+section h1 {
+  font-size: 4em;
+
+}
+
+.but-contact {
+  border: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: white;
+  border: 2px solid #4CAF50;
+  transition-duration: 0.4s;
+}
+
+.but-contact:hover {
+  background-color: green;
+  color: white;
+}
+
+.call button {
+  padding: 14px 20px;
+  border-radius: 4px;
+  background-color: white;
+  border: 2px solid #4CAF50;
+  transition-duration: 0.4s;
+}
