@@ -1,0 +1,15 @@
+{% extends "my_portfolio/index.html" %}
+
+{% block content %}
+
+<h2>Blog</h2>
+
+<div class="contain">
+    {% for blog in blogpost %}
+    <h3>{{ blog.title }}</h3>
+    {% endfor %}
+
+    dhd
+</div>
+
+{% endblock %}

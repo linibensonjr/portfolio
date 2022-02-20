@@ -22,7 +22,7 @@
       <header>
         <div class="head">
           <div class="menu-items">
-            <a href="#">Home</a>
+            <a href="/">Home</a>
             <a href="">Skills</a>
             <a href="{% url 'blog' %}">Blog</a>
             <a href="#">Portfolio</a>
@@ -38,10 +38,11 @@
         <button>About Me</button>
       </div> -->
       <hr>
-      <date>Jan</date>
-      <div class="content" style="height: 20vh; color: aqua;">
-        
-        <p>This</p>
+      <div class="contain">
+        {% block content %}
+
+
+        {% endblock %}
 
       </div>
   </body>
