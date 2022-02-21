@@ -6,10 +6,14 @@
 
 <div class="contain">
     {% for blog in blogpost %}
-    <h3>{{ blog.title }}</h3>
+    <div>
+    <date>{{ blog.date_pub }}</date>
+    <a href="" class="blog"><h3>{{ blog.title }}</h3></a>
+    <span>{{ blog.post |truncatechars:250 }}</span>
+    <a href="">Read more</a><br>
+</div>
     {% endfor %}
 
-    dhd
 </div>
 
 {% endblock %}

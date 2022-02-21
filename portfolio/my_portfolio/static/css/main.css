@@ -60,3 +60,7 @@ section h1 {
   border: 2px solid #4CAF50;
   transition-duration: 0.4s;
 }
+
+.blog a {
+  text-decoration: none;
+}

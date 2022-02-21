@@ -6,6 +6,6 @@ from django.utils import timezone
 
 # Create your views here.
 def blog(request):
-    blogpost = Blog.objects.filter(date_pub__lte=timezone.now()).order_by('-date_pub')
-    context = {blogpost:'blogpost'}
+    blogpost = Blog.objects.all()
+    context = {'blogpost':blogpost}
     return render(request, 'blog/blog.html', context)
