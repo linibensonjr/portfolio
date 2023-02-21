@@ -7,4 +7,4 @@ def port(request):
 
 
 def skills(request):
-    return render(request, 'my_porfolio/skills.html')
+    return render(request, 'my_portfolio/skills.html')
