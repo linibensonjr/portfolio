@@ -1,0 +1,19 @@
+{% extends "my_portfolio/index.html" %}
+
+{% block content %}
+
+<h2>Skills</h2>
+
+<div class="contain">
+    {% for blog in blogpost %}
+    <div>
+    <date>{{ blog.date_pub }}</date>
+    <a href="" class="blog"><h3>{{ blog.title }}</h3></a>
+    <span>{{ blog.post |truncatechars:250 }}</span>
+    <a href="">Read more</a><br>
+</div>
+    {% endfor %}
+
+</div>
+
+{% endblock %}
